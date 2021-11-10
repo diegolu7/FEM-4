@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/*- Mobile: 375px
+- Desktop: 1440px
+- Font size (name and stats): 18px
+*/
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--Dark-cyan);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vh bottom 50vh, left 50vh top 50vh;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 320px;
+  margin-right: 2.5em;
+  margin-left: 2.5em;
+  background-color: #fff;
+  border-radius: 1em;
+}
+
+@media (min-width:768px) {
+  .card {
+    max-width: 400px;
+  }
+
+}
+
+.card__background {
+  /* overflow: hidden; */
+  width: 100%;
+  border-radius: 1em 1em 0em 0em;
+  margin-bottom: -3.5em;
+}
+
+.img-content {
+  /*padre*/
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* background-color: white; */
+}
+
+.card__profile {
+  /*hijo*/
+  overflow: hidden;
+  border-radius: 50%;
+  border: .4em solid rgb(255, 255, 255);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--Very-dark-desaturated-blue);
+  padding-top: 1em;
+  margin-top: 0.1em;
+}
+
+.title-num {
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  padding-left: .3em;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.card-footer-items {
+  border-top: 0.1px solid rgb(238, 222, 222);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.item h2 {
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 1.1rem;
+  text-align: center;
+  padding-top: .1em;
+  color: hsl(229, 23%, 23%);
+
+}
+
+.item h4 {
+  color: var(--Dark-grayish-blue);
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-align: center;
+  padding-top: .5em;
+}
